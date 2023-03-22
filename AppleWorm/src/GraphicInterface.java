@@ -26,6 +26,13 @@ public class GraphicInterface implements Runnable{
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
         frame.setJMenuBar(null);
+        SoundGame soundGame = new SoundGame();
+        soundGame.play("./Asset/music/themeingame.mp3");
+
+// Lặp lại đoạn nhạc
+//        soundGame.clip.setLoopPoints(0, -1);
+//        soundGame.clip.loop(Clip.LOOP_CONTINUOUSLY);
+
     }
         /*JMenuBar menubar = new JMenuBar();
         JMenu menu;

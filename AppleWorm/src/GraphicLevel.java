@@ -7,7 +7,7 @@ import java.io.InputStream;
 
 public class GraphicLevel extends JComponent {
     Game game;
-    Image goal, box, boxOnGoal, wall, player,floor;
+    Image goal, box, boxOnGoal, wall, wall2, player,floor;
     int cellWidth;
     int cellHeight;
 
@@ -24,12 +24,13 @@ public class GraphicLevel extends JComponent {
     }
 
     public GraphicLevel(Game g){
-        goal = chargeImage("Goal");
-        box = chargeImage("Box");
-        boxOnGoal = chargeImage("BoxOnGoal");
+        goal = chargeImage("GlassGoat");
+        box = chargeImage("Apple");
+        boxOnGoal = chargeImage("AppleGoat");
         wall = chargeImage("Wall");
+        wall2 = chargeImage("Wall2");
         player  = chargeImage("Player");
-        floor = chargeImage("Floor");
+        floor = chargeImage("Glass");
         game = g;
     }
 
@@ -58,6 +59,8 @@ public class GraphicLevel extends JComponent {
 
                 if(lev.hasWall(j, i))
                     draw.drawImage(wall,x, y, cellWidth, cellHeight, null);
+                else if(lev.hasWall2(j, i))
+                    draw.drawImage(wall2,x, y, cellWidth, cellHeight, null);
                 else if(lev.hasBox(j,i))
                     if(lev.hasTarget(j,i))
                         draw.drawImage(boxOnGoal,x, y, cellWidth, cellHeight, null);

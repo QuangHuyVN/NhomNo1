@@ -18,6 +18,8 @@ public class LevelPrinter {
             for(int j = 0; j < l.columns(); j++){
                 if(l.hasWall(i, j))
                     p.print('#');
+                else if(l.hasWall2(i, j))
+                    p.print('!');
                 else if (l.hasPlayer(i, j))
                     if(l.hasTarget(i, j))
                         p.print('+');

@@ -29,6 +29,9 @@ public class LevelLector {
                         case '#':
                             lev.addWall(i, j);
                             break;
+                        case '!':
+                            lev.addWall2(i, j);
+                            break;
                         case '@':
                             lev.addPlayer(i, j);
                             break;

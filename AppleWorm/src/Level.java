@@ -1,6 +1,7 @@
 public class Level {
     static final int EMPTY = 0;
     static final int WALL = 1;
+    static final int WALL2 = 1;
     static final int PLAYER = 2;
     static final int TARGET = 4;
     static final int BOX = 8;
@@ -64,6 +65,10 @@ public class Level {
         addContent(WALL, i, j);
     }
 
+    public void addWall2(int i, int j){
+        addContent(WALL2, i, j);
+    }
+
     public void addPlayer(int i, int j){
         addContent(PLAYER, i, j);
         playerL = i;
@@ -99,7 +104,9 @@ public class Level {
     public boolean hasWall(int i, int j){
         return (board[i][j] & WALL) != 0;
     }
-
+    public boolean hasWall2(int i, int j){
+        return (board[i][j] & WALL2) != 0;
+    }
     public boolean hasTarget(int i, int j){
         return (board[i][j] & TARGET) != 0;
     }
@@ -143,7 +150,7 @@ public class Level {
     }
 
     public boolean isFree(int l, int c){
-        return !hasWall(l,c) && !hasBox(l,c);
+        return !hasWall(l,c) && !hasBox(l,c) && !hasWall2(l,c);
     }
 
     public void delete(int elm, int i, int j){
