@@ -70,7 +70,7 @@ public class LevelSelectorState extends State{
 					g.drawImage(Assets.outline, bounds.x, bounds.y, null);
 					if(levels[counter-1].isSolved())
 						Text.drawString(g, counter+"", xOffset + DOUBLETILESIZE/2 + j*DOUBLETILESIZE,
-							yOffset + DOUBLETILESIZE/2 + i*DOUBLETILESIZE, true, Color.GREEN);
+							yOffset + DOUBLETILESIZE/2 + i*DOUBLETILESIZE, true, Color.ORANGE);
 					else
 						Text.drawString(g,"?", xOffset + DOUBLETILESIZE/2 + j*DOUBLETILESIZE,
 								yOffset + DOUBLETILESIZE/2 + i*DOUBLETILESIZE, true, Color.BLUE);

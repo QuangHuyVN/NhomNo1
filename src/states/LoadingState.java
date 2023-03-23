@@ -44,8 +44,8 @@ public class LoadingState extends State{
 
 	@Override
 	public void render(Graphics g) {
-		g.setFont(Assets.font22);
-		Text.drawString(g, text, Window.WIDTH/2, Window.HEIGHT/2, true, Color.WHITE);
+		g.setFont(Assets.font48);
+		Text.drawString(g, text, Window.WIDTH/2, Window.HEIGHT/2, true, Color.RED);
 	}
 	
 }

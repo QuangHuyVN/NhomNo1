@@ -30,16 +30,16 @@ public class Assets {
 		
 		floor = loadImage("/blocks/ground.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
 		floor2 = loadImage("/blocks/ground2.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
-		wall = loadImage("/blocks/redBrick.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
-		boxOn = loadImage("/blocks/boxOn.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
-		boxOff = loadImage("/blocks/boxOff.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
-		spot = loadImage("/blocks/spot.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
+		wall = loadImage("/player/Wall1.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
+		boxOn = loadImage("/player/AppleGoat.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
+		boxOff = loadImage("/player/Apple.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
+		spot = loadImage("/player/Goal.png").getScaledInstance(Level.TILESIZE, Level.TILESIZE, BufferedImage.SCALE_DEFAULT);
 		outline = loadImage("/blocks/outline.png").getScaledInstance(64, 64, BufferedImage.SCALE_DEFAULT);
 		outline2 = loadImage("/blocks/outline2.png").getScaledInstance(64, 64, BufferedImage.SCALE_DEFAULT);
 		
-		font48 = loadFont("res/fonts/square.ttf", 48);
-		font22 = loadFont("res/fonts/square.ttf", 22);
-		font30 = loadFont("res/fonts/square.ttf", 30);
+		font48 = loadFont("res/fonts/LuckiestGuy-Regular.ttf", 48);
+		font22 = loadFont("res/fonts/LuckiestGuy-Regular.ttf", 22);
+		font30 = loadFont("res/fonts/LuckiestGuy-Regular.ttf", 30);
 		
 	}
 	

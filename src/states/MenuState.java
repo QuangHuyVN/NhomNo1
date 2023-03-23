@@ -47,7 +47,7 @@ public class MenuState extends State{
 	@Override
 	public void render(Graphics g) {
 		g.setFont(Assets.font48);
-		Text.drawString(g, "APPLE WORM", Window.WIDTH/2, Window.HEIGHT/2 - 200, true, Color.DARK_GRAY);
+		Text.drawString(g, "APPLE WORM", Window.WIDTH/2, Window.HEIGHT/2 - 200, true, Color.ORANGE);
 		for(int i = 0; i < buttons.size(); i++)
 			buttons.get(i).render(g);
 	}
